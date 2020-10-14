@@ -38,6 +38,7 @@ public class Money {
 
     }
 
+
     public int getYuan() {
         return yuan;
     }
@@ -71,16 +72,6 @@ public static class Utilse {
             return a1+a2;
         }
 }
-
-    public Money() {
-
-    }
-
-
-
-
-
-
 
 
 }
