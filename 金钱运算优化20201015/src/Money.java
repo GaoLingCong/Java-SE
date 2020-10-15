@@ -4,11 +4,6 @@ public class Money {
         private int jiao;
         private int fen;
 
-
-
-
-
-
         public void decimalism()//满10进1
         {
             if(fen>=10) {
@@ -26,8 +21,6 @@ public class Money {
             System.out.println("这个Money数是：");
             System.out.println(yuan+"元"+jiao+"角"+fen+"分");
         }
-
-
 
         public Money add(Money m2)
         {
@@ -61,13 +54,6 @@ if(c.yuan>d.jiao)
 {
     System.out.println("钱数A比较大");
 }
-
-
-
-
-
-
-
 
     }
 

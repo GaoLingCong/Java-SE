@@ -41,7 +41,6 @@ public class Main {
         Q1.decimalism();
         Q1.methodshow();
 
-
     }
 
 
