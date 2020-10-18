@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Preson {
     private String name;
     private int age;
-//快捷键Alt+insert 选择equals
+    //快捷键Alt+insert 选择equals
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;//防止空指针异常
