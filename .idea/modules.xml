@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/数组20200814/2020 0814.iml" filepath="$PROJECT_DIR$/数组20200814/2020 0814.iml" />
-      <module fileurl="file://$PROJECT_DIR$/创建对象20200814/2020 0815.iml" filepath="$PROJECT_DIR$/创建对象20200814/2020 0815.iml" />
-      <module fileurl="file://$PROJECT_DIR$/创建对象练习20200816/2020 0816.iml" filepath="$PROJECT_DIR$/创建对象练习20200816/2020 0816.iml" />
       <module fileurl="file://$PROJECT_DIR$/匿名对象20200817/2020 0817.iml" filepath="$PROJECT_DIR$/匿名对象20200817/2020 0817.iml" />
       <module fileurl="file://$PROJECT_DIR$/用Random创造随机数20200818/2020 0818.iml" filepath="$PROJECT_DIR$/用Random创造随机数20200818/2020 0818.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ArrayList集合20200819/2020 0819.iml" filepath="$PROJECT_DIR$/ArrayList集合20200819/2020 0819.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayList集合_20200819/2020 0819.iml" filepath="$PROJECT_DIR$/ArrayList集合_20200819/2020 0819.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayList集合的使用20200820/2020 0820.iml" filepath="$PROJECT_DIR$/ArrayList集合的使用20200820/2020 0820.iml" />
       <module fileurl="file://$PROJECT_DIR$/字符串20200821/2020 0821.iml" filepath="$PROJECT_DIR$/字符串20200821/2020 0821.iml" />
       <module fileurl="file://$PROJECT_DIR$/数学工具类Math20200822/2020 0822.iml" filepath="$PROJECT_DIR$/数学工具类Math20200822/2020 0822.iml" />
@@ -31,10 +28,13 @@
       <module fileurl="file://$PROJECT_DIR$/类和接口做数据类型20201012/2020 1012.iml" filepath="$PROJECT_DIR$/类和接口做数据类型20201012/2020 1012.iml" />
       <module fileurl="file://$PROJECT_DIR$/Object的toString方法20201013/2020 1013.iml" filepath="$PROJECT_DIR$/Object的toString方法20201013/2020 1013.iml" />
       <module fileurl="file://$PROJECT_DIR$/金钱运算20201014/2020 1014.iml" filepath="$PROJECT_DIR$/金钱运算20201014/2020 1014.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/GLC  JAVA.iml" filepath="$PROJECT_DIR$/.idea/GLC  JAVA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/进行金钱运算2020 1017/Main.iml" filepath="$PROJECT_DIR$/进行金钱运算2020 1017/Main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/进行金钱运算2020 1017/Money.iml" filepath="$PROJECT_DIR$/进行金钱运算2020 1017/Money.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Object类的equals方法_20201018/Object类的equals方法_20201018.iml" filepath="$PROJECT_DIR$/Object类的equals方法_20201018/Object类的equals方法_20201018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Object类的equals方法20201018/Object类的equals方法20201018.iml" filepath="$PROJECT_DIR$/Object类的equals方法20201018/Object类的equals方法20201018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/创建对象20200814/创建对象和类_20200815.iml" filepath="$PROJECT_DIR$/创建对象20200814/创建对象和类_20200815.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数组的创建和使用_20200814/数组的创建和使用_20200814.iml" filepath="$PROJECT_DIR$/数组的创建和使用_20200814/数组的创建和使用_20200814.iml" />
+      <module fileurl="file://$PROJECT_DIR$/毫秒值得概念和使用_20201019/毫秒值得概念和作业_20201019.iml" filepath="$PROJECT_DIR$/毫秒值得概念和使用_20201019/毫秒值得概念和作业_20201019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/测试项目排序上传git_20201019.iml" filepath="$PROJECT_DIR$/测试项目排序上传git_20201019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算20201017.iml" filepath="$PROJECT_DIR$/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算20201017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算修改版20201017.iml" filepath="$PROJECT_DIR$/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算修改版20201017.iml" />
       <module fileurl="file://$PROJECT_DIR$/金钱运算优化20201015/金钱运算优化20201015.iml" filepath="$PROJECT_DIR$/金钱运算优化20201015/金钱运算优化20201015.iml" />
     </modules>
   </component>
