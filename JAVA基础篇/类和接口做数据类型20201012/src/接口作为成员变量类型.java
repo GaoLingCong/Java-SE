@@ -1,7 +1,3 @@
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.rmi.server.SkeletonNotFoundException;
-
 public class 接口作为成员变量类型 {
     public static void main(String[] args) {
         英雄 英雄1 = new 英雄();

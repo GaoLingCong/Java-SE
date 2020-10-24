@@ -48,14 +48,12 @@ public class Money {
     }
     public void compare(Money a,Money b)
     {
-        Money c = null;
-        Money d = null;
-if(c.yuan>d.jiao)
-{
-    System.out.println("钱数A比较大");
-}
 
-    }
+        if (yuan > yuan) {
+            System.out.println("钱数A比较大");
+        }
+
+     }
 
 
         public int getYuan() {

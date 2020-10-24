@@ -2,8 +2,8 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../10_继承练习2_20200830">
-      <sourceFolder url="file://$MODULE_DIR$/../10_继承练习2_20200830/src" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../JAVA基础篇/6_字符串方法与运用_20200821">
+      <sourceFolder url="file://$MODULE_DIR$/../JAVA基础篇/6_字符串方法与运用_20200821/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
