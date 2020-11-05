@@ -1,9 +1,7 @@
 public class C6001_Rational implements Cloneable {
   private int numerator;//分子
   private int denominator;//分母
-  private C6001_Rational C;
   public static int count;
-  C6001_Rational Rat;
   static {
       count = 0;//演示静态初始化块，这里可以采用声明初始化
   }
@@ -108,13 +106,6 @@ public class C6001_Rational implements Cloneable {
         return (C6001_Rational) super.clone();
     }
 
-    public C6001_Rational getC() {
-        return C;
-    }
-
-    public void setC(C6001_Rational c) {
-        C = c;
-    }
 
     public int getNumerator() {
         return numerator;
