@@ -14,6 +14,9 @@ public class Main {
                     Circle();
                     break;
                 case "3":
+                    Trapezoidal();
+                    break;
+                case "4":
                     Triangle();
                     break;
                 case "0":
@@ -51,16 +54,25 @@ public class Main {
         Tri.GetPerimetter();
 
     }
+
+    public static void Trapezoidal()//梯形
+    {
+        Trapezoidal Tri = new Trapezoidal();
+        Tri.Assignment();
+        Tri.GetArea();
+        Tri.GetPerimetter();
+    }
     public static void Show()
     {
         System.out.println("****************************");
-        System.out.println("**欢迎使用图形面积周长计算器**");
+        System.out.println("  欢迎使用图形面积周长计算器  ");
         System.out.println("****************************");
-        System.out.println("请输入你需要计算的图形");
-        System.out.println("输入1 矩形");
-        System.out.println("输入2 圆形");
-        System.out.println("输入3 三角形");
-        System.out.println("输入0 退出系统");
+        System.out.println("***请输入您需要计算的图形****");
+        System.out.println("         输入1  矩形         ");
+        System.out.println("         输入2  圆形         ");
+        System.out.println("         输入3  梯形         ");
+        System.out.println("         输入4  三角形         ");
+        System.out.println("         输入0  退出系统         ");
     }
 
 

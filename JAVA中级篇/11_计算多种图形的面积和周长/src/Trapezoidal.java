@@ -4,9 +4,10 @@ import java.util.Scanner;
 public class Trapezoidal implements Shape{
     private float a;//上底
     private float b;//下底
-    private float h;//高
-    private float Y1;//下底
-    private float Y2;//下底
+    private float y1;//梯形的腰1
+    private float y2;//梯形的腰2
+    private float s;//梯形面积
+    private float h;//梯形高
     Scanner sc = new Scanner(System.in);
     public void Assignment()
     {
@@ -14,7 +15,11 @@ public class Trapezoidal implements Shape{
         a=sc.nextFloat();
         System.out.println("请输入梯形下底b的值");
         b=sc.nextFloat();
-        System.out.println("请输入梯形高h的值");
+        System.out.println("请输入梯形腰边长c的值");
+        y1=sc.nextFloat();
+        System.out.println("请输入梯形腰边长d的值");
+        y2=sc.nextFloat();
+        System.out.println("请输入梯形的高h的值");
         h=sc.nextFloat();
 
     }
@@ -25,6 +30,7 @@ public class Trapezoidal implements Shape{
 
     @Override
     public void GetPerimetter() {
+        System.out.println("梯形周长为"+(a+b+y1+y2));
 
     }
 }
