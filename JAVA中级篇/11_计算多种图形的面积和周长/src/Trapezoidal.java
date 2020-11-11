@@ -6,9 +6,11 @@ public class Trapezoidal implements Shape{
     private float b;//下底
     private float y1;//梯形的腰1
     private float y2;//梯形的腰2
-    private float s;//梯形面积
     private float h;//梯形高
+
     Scanner sc = new Scanner(System.in);
+
+
     public void Assignment()
     {
         System.out.println("请输入梯形上底a的值");
@@ -23,8 +25,11 @@ public class Trapezoidal implements Shape{
         h=sc.nextFloat();
 
     }
+
+
     @Override
     public void GetArea() {
+
         System.out.println("梯形面积为"+((a+b)*h)/2);
     }
 

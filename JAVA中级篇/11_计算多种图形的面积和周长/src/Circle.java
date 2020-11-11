@@ -1,7 +1,8 @@
 import java.util.Scanner;
 //圆形类
 public class Circle implements Shape {
-    private float r;
+    private float r;//半径
+
     Scanner sc = new Scanner(System.in);
 
 

@@ -4,6 +4,7 @@ import java.util.Scanner;
  class Rectangle implements Shape{
      private float a;//边长a
      private float b;//边长b
+
     Scanner sc = new Scanner(System.in);
 
 
@@ -25,4 +26,5 @@ import java.util.Scanner;
     public void GetPerimetter() {
         System.out.println("矩形的周长为"+2*(a+b));
     }
+
 }

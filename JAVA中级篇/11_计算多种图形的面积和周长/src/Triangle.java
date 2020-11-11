@@ -5,11 +5,13 @@ public class Triangle implements Shape {
     private float a;
     private float b;
     private float c;
-    private float s;
-    private float d;
+    private float s;//面积
+    private float d;//周长
     Scanner sc = new Scanner(System.in);
+
+
     public void Assignment()
-    {
+        {
         System.out.println("请输入三角形边长a的值");
         a=sc.nextFloat();
         System.out.println("请输入三角形边长b的值");
@@ -19,7 +21,8 @@ public class Triangle implements Shape {
         float p = (a+b+c)/2;//p为三角形半边周长
          s = (float) Math.sqrt(p*(p-a)*(p-b)*(p-c));//面积
          d = a+b+c;//周长
-    }
+         }
+
 
     public void  judge(){  //判断三角形边长关系
         while ((a+b)<=c&&(a-c)<=b)
@@ -33,6 +36,8 @@ public class Triangle implements Shape {
         }
 
     }
+
+
     @Override
     public void GetArea() {
         System.out.println("三角形面积为"+s);
