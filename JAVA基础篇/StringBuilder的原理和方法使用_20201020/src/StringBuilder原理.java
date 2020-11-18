@@ -8,12 +8,9 @@ private final byte[] value;
 进行字符串的相加内存就会有多个字符串，占用空间多，效率低下
 String s = "a"+"b"+"c'="abc" 这样就有开辟多个内存
 
-
 StrinBulider类
 字符串缓冲区，可以提高字符串的操作效率（可以看成一个长度可以变化的字符串）
 底层也是一个数组，但是没有被final修饰，可以改变长度
-
-
 StringBuilder在内存中始终是一个数组，占用空间少，效率高
 如果超出StringBuilder的容量，会自动扩容
 

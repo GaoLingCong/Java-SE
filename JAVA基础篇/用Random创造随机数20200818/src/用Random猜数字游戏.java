@@ -1,4 +1,6 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import java.util.Random;
+import java.util.Scanner;
+
 /*
 题目：
 用代码模拟猜数字的小游戏。
@@ -13,8 +15,6 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
     如果猜中了，游戏结束。
 5. 重试就是再来一次，循环次数不确定，用while(true)。
 */
-import java.util.Random;
-import java.util.Scanner;
 
 public class 用Random猜数字游戏 {
     public static void main(String[] args) {

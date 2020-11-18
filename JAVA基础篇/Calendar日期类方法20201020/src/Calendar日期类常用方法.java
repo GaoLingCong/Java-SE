@@ -38,7 +38,7 @@ public class Calendar日期类常用方法 {
         参数:传递指定的日历字段(YEAR,MONTH...)
         返回值:日历字段代表的具体的值
      */
-    private static void method1() {
+    private static void get() {
         //第一步使用getInstance方法获取Calendar对象
         Calendar c = Calendar.getInstance();
         //第二步传入需要参数并接收
@@ -62,7 +62,7 @@ public class Calendar日期类常用方法 {
             int field:传递指定的日历字段(YEAR,MONTH...)
             int value:给指定字段设置的值
      */
-    private static void method2()
+    private static void set()
     {
         //第一步使用getInstance方法获取Calendar对象
         Calendar c = Calendar.getInstance();
@@ -95,7 +95,7 @@ public class Calendar日期类常用方法 {
                 负数:减少
      */
 
-    private static void method3()
+    private static void add()
     {
         //第一步使用getInstance方法获取Calendar对象
         Calendar c = Calendar.getInstance();
@@ -125,7 +125,7 @@ public class Calendar日期类常用方法 {
         把日历对象,转换为日期对象
      */
 
-    private static void method4()
+    private static void Time()
     {
         //第一步使用getInstance方法获取Calendar对象
         Calendar c = Calendar.getInstance();

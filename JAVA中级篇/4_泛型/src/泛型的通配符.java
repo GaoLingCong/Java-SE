@@ -18,6 +18,15 @@ public class 泛型的通配符 {
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("a");
         list2.add("b");
+        list2.add("132");
+        for (Integer a: list1
+             ) {
+            System.out.println(a);
+        }
+        /*
+        * 如果今天我偷懒了，就不是我了，我要做回我自己，我做什么事都要尽力这才是我
+        * 这叫尽人事听天命
+        * */
 
 
       /*

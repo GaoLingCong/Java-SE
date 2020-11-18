@@ -15,5 +15,6 @@ public class Test implements Cloneable {
         C6001_Rational result = x.add(y).add(z).add(h);
         System.out.println("1/2+1/3+1/6+1/5 = "+result.getInfo());
 
+
     }
 }

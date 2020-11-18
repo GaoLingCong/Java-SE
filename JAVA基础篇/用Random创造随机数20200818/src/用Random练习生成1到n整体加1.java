@@ -1,5 +1,3 @@
-import com.sun.deploy.uitoolkit.impl.fx.AppletStageManager;
-
 import java.util.Random;
 
 /*

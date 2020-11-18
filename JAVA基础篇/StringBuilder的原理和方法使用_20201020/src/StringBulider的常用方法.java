@@ -30,11 +30,6 @@ public class StringBulider的常用方法 {
         //toLowerCase()方法是把大小转换小写
         bu.append("abc").append(1).append(true).append('高');
         System.out.println(bu);
-
-
     }
-
-
-
     }
 
