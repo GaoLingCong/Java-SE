@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
@@ -15,6 +17,7 @@ public class 键盘单词练习 {
             frame.setTitle("键盘单词练习");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//设置关闭形式
             frame.setVisible(true);
+
         });
     }
 }
@@ -29,22 +32,26 @@ class SimpleFrames extends JFrame {
      private     String ch;
      private     String ce;
      private     char cw;
-
+     private     String cf;
     /*
     创建一个新的随机数生成器
     Toolkit:将各种组件绑定到特定本机工具包实现。
      getDefaultToolkit(): 获取默认工具包
     getScreenSize:获取屏幕的大小。
      */
+
+
     public SimpleFrames() {
 
-
-      Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         ran = new Random();
         sw = dim.width;
        sh = dim.height;
         initializeComponents();
     }
+
+
+
 
     /*
     键盘事件处理，继承KeyAdapter，只处理KeyReleased方法
@@ -59,25 +66,24 @@ class SimpleFrames extends JFrame {
     private class KeyHanbler extends KeyAdapter {
         @Override
         public void keyReleased(KeyEvent e) {
-           Scanner sc = new Scanner(System.in);
-              ch=sc.next();
-             cw = e.getKeyChar();
-             ce=String.valueOf(cw);
 
-            if(ch==ce)
-            {
-                String a = randomWord();
-                lbChar.setText(a);
-                Font font = new Font("Times new roman", Font.BOLD, 30);
+            ch = lbChar.getText();
+            cw = e.getKeyChar();
+             ce=String.valueOf(cw);//char 转String
+         String a = randomWord();
+         lbChar.setText(a);
+     Font font = new Font("Times new roman", Font.BOLD, 30);
 //              设置坐标
-                lbChar.setLocation(ran.nextInt( 500), ran.nextInt( 500));
-            }
+        lbChar.setLocation(ran.nextInt(500), ran.nextInt(500));
 
 
-            }
+}
+
+
         }
 
     private void initializeComponents() {
+
 
         this.setLayout(null);//使用绝对布局，才能制定随机位置
         lbChar = new JLabel();//用于短文本字符串或图像或二者的显示区
