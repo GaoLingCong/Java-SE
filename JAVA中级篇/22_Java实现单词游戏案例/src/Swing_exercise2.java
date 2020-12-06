@@ -28,6 +28,8 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
 
     //定义按钮
     JButton jb2;
+    JButton jb3;
+    JButton jb1;
 
     //定义显示区域
     JLabel jla1;
@@ -49,8 +51,11 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
     public Swing_exercise2()        //构造函数
     {
         //字体初始化 Times new roman：罗马字样 加粗
-        Font font = new Font("Times new roman", Font.BOLD, 30);
+        Font font = new Font("Times new roman", Font.BOLD, 50);
+        Font font2 = new Font("Times new roman", Font.BOLD, 30);
         Font font1 = new Font("宋体", Font.BOLD, 20);
+        Font font4 = new Font("宋体", Font.BOLD, 70);
+
 
         //创建随机函数
         ran = new Random();
@@ -79,7 +84,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
 
         //设置字体样式
         jta3.setFont(font1);
-        jta2.setFont(font);
+        jta2.setFont(font2);
         jta1.setFont(font);
 
 
@@ -104,9 +109,16 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jla1.setSize(500, 500);
         jla1.setLocation(ran.nextInt(300), ran.nextInt(200));
 
+        //设置颜色
+        jla1.setForeground(Color.green);
+        jla1.setBackground(Color.decode("#000cc"));
+
+
 
         //创建按钮
         jb2 = new JButton("确定");
+        jb3 = new JButton("退出");
+        jb1 = new JButton("重置");
 
 
         //设置布局管理
@@ -118,6 +130,8 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         //添加组件
         jp1.add(jsp);
         jp2.add(jb2);
+        jp2.add(jb1);
+        jp2.add(jb3);
         jp3.add(jsp1);
         jta1.add(jla1);
 
@@ -133,6 +147,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         this.add(jp2, BorderLayout.SOUTH);
         this.add(jp3, BorderLayout.WEST);
 
+
         //设置窗体属性
         this.setTitle("单词游戏");                                    //设置界面标题
         this.setExtendedState(MAXIMIZED_BOTH);                      //窗口最大化
@@ -140,32 +155,99 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       //设置虚拟机和界面一同关闭
         this.setVisible(true);                                     //设置界面可视化
 
-        //事件监听
+        //空格加鼠标确定事件监听
         jb2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (jta2.getText().equals(ch)) {
+                    jta1.setText("");
+                    jta2.setText("");
                     z=z+1;
                     Fen=Fen+5;
                     sun=x+z;
+                    jta3.setForeground(Color.blue);
                     jta3.setText("回答正确    " +
-                            "     得分+5         "+"  作答情况"+""+"正确："+z+" "+"错误："
-                            +x+" 总答题:"+sun+"         总得分为  "+Fen+"        " +
-                            "              不要骄傲");
+                            "     得分+5         "+"          作答情况 "+""+"正确："+z+" "+"错误:"
+                            +x+"   总答题:"+sun+"         总得分为  "+Fen+"        " +
+                            "      不要骄傲");
                     ch = RandomWords();
                     jla1.setText(ch);
-                    jla1.setLocation(ran.nextInt(500), ran.nextInt(500));
+                    jla1.setLocation(ran.nextInt(700), ran.nextInt(300));
                 }else {
+                    jta3.setForeground(Color.red);
+                    jta1.setText("");
+                    jta2.setText("");
                     Fen=Fen-2;
+                    if(Fen<0){
+                        Fen=0;
+                    }
                     x+=1;
                     sun=x+z;
                     jta3.setText("回答错误    " +
-                            "     得分-2         "+"  作答情况"+""+"正确："+z+" "+"错误："
-                            +x+" 总答题:"+sun+"         总得分为  "+Fen+"        " +
-                            "              再接再厉");
+                            "     得分-2         "+"          作答情况 "+""+"正确："+z+" "+"错误:"
+                            +x+"   总答题:"+sun+"         总得分为  "+Fen+"        " +
+                            "      再接再厉");
                 }
             }
         });
+
+        //退出按钮事件监听
+        jb3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+
+        //重置按钮事件监听
+        jb1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jta3.setForeground(Color.GRAY);
+                jta1.setFont(font4);
+                jta1.setText("不骄不躁，继续努力");
+                jta1.setForeground(Color.CYAN);
+                jta2.setText("");
+                z=0;
+                sun=0;
+                x=0;
+                Fen=0;
+                jta3.setText("重新答题    " +
+                        "             "+"作答情况"+""+"正确：0"+" "+"错误：0"
+                        +" 总答题:0"+"         总得分为 0 "+"        " +
+                        "              不忘初心 继续前行");
+            }
+        });
+
+        //备选空格事件处理
+        /*jb2.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                if(e.getKeyCode()==KeyEvent.getExtendedKeyCodeForChar(KeyEvent.VK_SPACE)){
+                    if (jta2.getText().equals(ch)) {
+                        z=z+1;
+                        Fen=Fen+5;
+                        sun=x+z;
+                        jta3.setText("回答正确    " +
+                                "     得分+5         "+"  作答情况"+""+"正确："+z+" "+"错误："
+                                +x+" 总答题:"+sun+"         总得分为  "+Fen+"        " +
+                                "      不要骄傲");
+                        ch = RandomWords();
+                        jla1.setText(ch);
+                        jla1.setLocation(ran.nextInt(300), ran.nextInt(500));
+                    }else {
+                        Fen=Fen-2;
+                        x+=1;
+                        sun=x+z;
+                        jta3.setText("回答错误    " +
+                                "     得分-2         "+"  作答情况"+""+"正确："+z+" "+"错误："
+                                +x+" 总答题:"+sun+"         总得分为  "+Fen+"        " +
+                                "      再接再厉");
+                    }
+
+                }
+            }
+        });*/
     }
 
     //随机产生单词
