@@ -105,14 +105,13 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         //初始化显示页面
         ch = RandomWords();
         jla1.setText(ch);
+        jta3.setText("欢迎加入单词游戏答对+5分答错-2分");
         jla1.setSize(sw, sh);
         jla1.setSize(500, 500);
         jla1.setLocation(ran.nextInt(300), ran.nextInt(200));
 
         //设置颜色
         jla1.setForeground(Color.green);
-        jla1.setBackground(Color.decode("#000cc"));
-
 
 
         //创建按钮
@@ -122,7 +121,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
 
 
         //设置布局管理
-        jp1.setLayout(new BorderLayout());    //设置面板布局
+        jp1.setLayout(new BorderLayout());
         jp2.setLayout(new FlowLayout(FlowLayout.CENTER));
         jp3.setLayout(new BorderLayout());
 
@@ -159,34 +158,14 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jb2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 if (jta2.getText().equals(ch)) {
-                    jta1.setText("");
-                    jta2.setText("");
-                    z=z+1;
-                    Fen=Fen+5;
-                    sun=x+z;
-                    jta3.setForeground(Color.blue);
-                    jta3.setText("回答正确    " +
-                            "     得分+5         "+"          作答情况 "+""+"正确："+z+" "+"错误:"
-                            +x+"   总答题:"+sun+"         总得分为  "+Fen+"        " +
-                            "      不要骄傲");
-                    ch = RandomWords();
-                    jla1.setText(ch);
-                    jla1.setLocation(ran.nextInt(700), ran.nextInt(300));
+                    Correctanswer();
+
                 }else {
-                    jta3.setForeground(Color.red);
-                    jta1.setText("");
-                    jta2.setText("");
-                    Fen=Fen-2;
-                    if(Fen<0){
-                        Fen=0;
-                    }
-                    x+=1;
-                    sun=x+z;
-                    jta3.setText("回答错误    " +
-                            "     得分-2         "+"          作答情况 "+""+"正确："+z+" "+"错误:"
-                            +x+"   总答题:"+sun+"         总得分为  "+Fen+"        " +
-                            "      再接再厉");
+                    jla1.setForeground(Color.red);
+                    Wronganswer();
+
                 }
             }
         });
@@ -203,19 +182,8 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jb1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                jta3.setForeground(Color.GRAY);
                 jta1.setFont(font4);
-                jta1.setText("不骄不躁，继续努力");
-                jta1.setForeground(Color.CYAN);
-                jta2.setText("");
-                z=0;
-                sun=0;
-                x=0;
-                Fen=0;
-                jta3.setText("重新答题    " +
-                        "             "+"作答情况"+""+"正确：0"+" "+"错误：0"
-                        +" 总答题:0"+"         总得分为 0 "+"        " +
-                        "              不忘初心 继续前行");
+                Reset();
             }
         });
 
@@ -254,7 +222,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
     private String RandomWords() {//产生随机单词
         String[] s = {"good", "cheer", "strive", "optimistic", "hello", "word", "tercher", "student",
                 "book", "genius", "handsome", "beautiful", "health", "happy", "exercice", "computer",
-                "english", "jspanese", "eat", "me"};
+                "english", "jspanese", "eat", "me","reset","center","blue","green","yellow"};
         int b = ran.nextInt(21);//定义随机数区间[0,20]
         return s[b];
     }
@@ -264,5 +232,83 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         sw = dim.width;
         sh = dim.height;
+    }
+
+    //回答正确
+    private void Correctanswer(){
+        //初始化数据
+        z=z+1;
+        Fen=Fen+5;
+        sun=x+z;
+
+        //初始化文本
+        jta1.setText("");
+        jta2.setText("");
+        jta3.setText("回答正确    " +
+                "     得分+5         "+"          作答情况 "+""+"正确："+z+" "+"错误:"
+                +x+"   总答题:"+sun+"         总得分为  "+Fen+"        " +
+                "      不要骄傲");
+
+
+        //改变颜色
+        jla1.setForeground(Color.green);
+        jta3.setForeground(Color.blue);
+
+        //产生单词
+        ch = RandomWords();
+        jla1.setText(ch);
+
+        //更改位置
+        jla1.setLocation(ran.nextInt(700), ran.nextInt(300));
+
+    }
+
+    //回答错误
+    private void Wronganswer(){
+        //修改数据
+        Fen=Fen-2;
+        if(Fen<0){
+            Fen=0;
+        }
+        x+=1;
+        sun=x+z;
+
+        //初始化文本
+        jta1.setText("");
+        jta2.setText("");
+        jta3.setText("回答错误    " +
+                "     得分-2         "+"          作答情况 "+""+"正确："+z+" "+"错误:"
+                +x+"   总答题:"+sun+"         总得分为  "+Fen+"        " +
+                "      再接再厉");
+
+        //改变颜色
+        jla1.setForeground(Color.red);
+        jta3.setForeground(Color.red);
+
+
+    }
+
+    //重置按钮
+    private void Reset(){
+        //修改数据
+        z=0;
+        sun=0;
+        x=0;
+        Fen=0;
+
+        //初始化文本
+        jta1.setText("重新开始，继续努力");
+        jta2.setText("");
+        jta3.setText("重新答题    " +
+                "             "+"作答情况"+""+"正确：0"+" "+"错误：0"
+                +" 总答题:0"+"         总得分为 0 "+"        " +
+                "              不忘初心 继续前行");
+
+        //改变颜色
+        jta3.setForeground(Color.GRAY);
+        jta1.setForeground(Color.CYAN);
+        jla1.setForeground(Color.green);
+
+
     }
 }
