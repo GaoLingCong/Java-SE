@@ -1,7 +1,5 @@
 package 一.线程;
 
-import 一.线程.设置线程名字C;
-
 public class 设置线程的名字M {
     public static void main(String[] args) {
         //方法一 直接set改名字
