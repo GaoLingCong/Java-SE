@@ -15,9 +15,6 @@ GETNAME();
 LENGTH();
 
 
-
-
-
     }
 
       /*
