@@ -297,6 +297,8 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         Fen=0;
 
         //初始化文本
+        ch = RandomWords();
+        jla1.setText(ch);
         jta1.setText("重新开始，继续努力");
         jta2.setText("");
         jta3.setText("重新答题    " +
