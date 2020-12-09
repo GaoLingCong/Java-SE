@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/9_继承练习2_20200830/10_继承练习2_20200830.iml" filepath="$PROJECT_DIR$/JAVA基础篇/9_继承练习2_20200830/10_继承练习2_20200830.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/10_Map集合/11_HashMap存储自定义类型键值/11_HashMap存储自定义类型键值.iml" filepath="$PROJECT_DIR$/JAVA中级篇/10_Map集合/11_HashMap存储自定义类型键值/11_HashMap存储自定义类型键值.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/13_计算一个字符串中每个字符出现次数/13_计算一个字符串中每个字符出现次数.iml" filepath="$PROJECT_DIR$/JAVA中级篇/13_计算一个字符串中每个字符出现次数/13_计算一个字符串中每个字符出现次数.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/14_使用of在集合当中添加多个元素/14_使用of在集合当中添加多个元素.iml" filepath="$PROJECT_DIR$/JAVA中级篇/14_使用of在集合当中添加多个元素/14_使用of在集合当中添加多个元素.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/16_异常/16_异常.iml" filepath="$PROJECT_DIR$/JAVA中级篇/16_异常/16_异常.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/14_使用of在集合当中添加多个元素/14_使用of在集合当中添加多个元素.iml" filepath="$PROJECT_DIR$/JAVA提高篇/14_使用of在集合当中添加多个元素/14_使用of在集合当中添加多个元素.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/16_异常/16_异常.iml" filepath="$PROJECT_DIR$/JAVA提高篇/16_异常/16_异常.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/17_断言/17_断言.iml" filepath="$PROJECT_DIR$/JAVA提高篇/17_断言/17_断言.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/18_线程/18_线程.iml" filepath="$PROJECT_DIR$/JAVA提高篇/18_线程/18_线程.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/19_图形用户界面程序设计/19_图形用户界面程序设计.iml" filepath="$PROJECT_DIR$/JAVA提高篇/19_图形用户界面程序设计/19_图形用户界面程序设计.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/1_Java集合框架/Java集合框架.iml" filepath="$PROJECT_DIR$/JAVA提高篇/1_Java集合框架/Java集合框架.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/1.匿名对象_20200817/2020 0817.iml" filepath="$PROJECT_DIR$/JAVA基础篇/1.匿名对象_20200817/2020 0817.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/用Random创造随机数20200818/2020 0818.iml" filepath="$PROJECT_DIR$/JAVA基础篇/用Random创造随机数20200818/2020 0818.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayList集合_20200819/2020 0819.iml" filepath="$PROJECT_DIR$/ArrayList集合_20200819/2020 0819.iml" />
@@ -32,29 +34,36 @@
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/类和接口做数据类型20201012/2020 1012.iml" filepath="$PROJECT_DIR$/JAVA基础篇/类和接口做数据类型20201012/2020 1012.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/Object的toString方法20201013/2020 1013.iml" filepath="$PROJECT_DIR$/JAVA基础篇/Object的toString方法20201013/2020 1013.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/金钱运算20201014/2020 1014.iml" filepath="$PROJECT_DIR$/JAVA基础篇/金钱运算20201014/2020 1014.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/21_Java事件处理/21_Java事件处理.iml" filepath="$PROJECT_DIR$/JAVA提高篇/21_Java事件处理/21_Java事件处理.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/22_Java实现单词游戏案例/22_Java实现单词游戏案例.iml" filepath="$PROJECT_DIR$/JAVA提高篇/22_Java实现单词游戏案例/22_Java实现单词游戏案例.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/23_Lambda表达式/23_Lambda表达式.iml" filepath="$PROJECT_DIR$/JAVA提高篇/23_Lambda表达式/23_Lambda表达式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/2_Java集合实现斗地主案列/Java集合实现斗地主案列.iml" filepath="$PROJECT_DIR$/JAVA提高篇/2_Java集合实现斗地主案列/Java集合实现斗地主案列.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/13_计算一个字符串中每个字符出现次数/13_计算一个字符串中每个字符出现次数.iml" filepath="$PROJECT_DIR$/JAVA提高篇/13_计算一个字符串中每个字符出现次数/13_计算一个字符串中每个字符出现次数.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/24_File类/24_File类.iml" filepath="$PROJECT_DIR$/JAVA提高篇/24_File类/24_File类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/3_包装类的概念/包装类的概念.iml" filepath="$PROJECT_DIR$/JAVA提高篇/3_包装类的概念/包装类的概念.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/25_递归/25_递归.iml" filepath="$PROJECT_DIR$/JAVA提高篇/25_递归/25_递归.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/4_泛型/泛型.iml" filepath="$PROJECT_DIR$/JAVA提高篇/4_泛型/泛型.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/11_计算多种图形的面积和周长/计算多种图形的面积和周长.iml" filepath="$PROJECT_DIR$/JAVA提高篇/11_计算多种图形的面积和周长/计算多种图形的面积和周长.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/37_测试git_20201024/37_测试git_20201024.iml" filepath="$PROJECT_DIR$/JAVA基础篇/37_测试git_20201024/37_测试git_20201024.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/6_可变参数/6_可变参数.iml" filepath="$PROJECT_DIR$/JAVA中级篇/6_可变参数/6_可变参数.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/8_有理数计算/8_有理数计算.iml" filepath="$PROJECT_DIR$/JAVA中级篇/8_有理数计算/8_有理数计算.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/9_Collections集合工具类/Collections集合工具类.iml" filepath="$PROJECT_DIR$/JAVA中级篇/9_Collections集合工具类/Collections集合工具类.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/JAVA中级篇.iml" filepath="$PROJECT_DIR$/JAVA中级篇/JAVA中级篇.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/10_Map集合/11_HashMap存储自定义类型键值/11_HashMap存储自定义类型键值.iml" filepath="$PROJECT_DIR$/JAVA提高篇/10_Map集合/11_HashMap存储自定义类型键值/11_HashMap存储自定义类型键值.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA代码测试/JAVA代码测试.iml" filepath="$PROJECT_DIR$/JAVA代码测试/JAVA代码测试.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/JAVA基础篇.iml" filepath="$PROJECT_DIR$/JAVA基础篇/JAVA基础篇.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java练习草稿篇/Java练习草稿篇.iml" filepath="$PROJECT_DIR$/Java练习草稿篇/Java练习草稿篇.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/2_Java集合实现斗地主案列/Java集合实现斗地主案列.iml" filepath="$PROJECT_DIR$/JAVA中级篇/2_Java集合实现斗地主案列/Java集合实现斗地主案列.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/1_Java集合框架/Java集合框架.iml" filepath="$PROJECT_DIR$/JAVA中级篇/1_Java集合框架/Java集合框架.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/10_Map集合/Map集合.iml" filepath="$PROJECT_DIR$/JAVA中级篇/10_Map集合/Map集合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/10_Map集合/Map集合.iml" filepath="$PROJECT_DIR$/JAVA提高篇/10_Map集合/Map集合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/JAVA提高篇.iml" filepath="$PROJECT_DIR$/JAVA提高篇/JAVA提高篇.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/5_集合/集合.iml" filepath="$PROJECT_DIR$/JAVA提高篇/5_集合/集合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/20_JavaGUI_swing组件基础学习/20_JavaGUI_swing组件基础学习.iml" filepath="$PROJECT_DIR$/JAVA提高篇/20_JavaGUI_swing组件基础学习/20_JavaGUI_swing组件基础学习.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/15_Map集合实现斗地主洗牌发牌排序牌看牌/Map集合实现斗地主洗牌发牌排序牌看牌.iml" filepath="$PROJECT_DIR$/JAVA基础篇/15_Map集合实现斗地主洗牌发牌排序牌看牌/Map集合实现斗地主洗牌发牌排序牌看牌.iml" />
       <module fileurl="file://$PROJECT_DIR$/Object类的equals方法20201018/Object类的equals方法20201018.iml" filepath="$PROJECT_DIR$/Object类的equals方法20201018/Object类的equals方法20201018.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/3_创建对象练习_20200816/创建对象和类_20200815.iml" filepath="$PROJECT_DIR$/JAVA基础篇/3_创建对象练习_20200816/创建对象和类_20200815.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/3_包装类的概念/包装类的概念.iml" filepath="$PROJECT_DIR$/JAVA中级篇/3_包装类的概念/包装类的概念.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/6_可变参数/6_可变参数.iml" filepath="$PROJECT_DIR$/JAVA提高篇/6_可变参数/6_可变参数.iml" />
       <module fileurl="file://$PROJECT_DIR$/总文件.iml" filepath="$PROJECT_DIR$/总文件.iml" />
       <module fileurl="file://$PROJECT_DIR$/数组的创建和使用_20200814/数组的创建和使用_20200814.iml" filepath="$PROJECT_DIR$/数组的创建和使用_20200814/数组的创建和使用_20200814.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/毫秒值得概念和使用_20201019/毫秒值得概念和作业_20201019.iml" filepath="$PROJECT_DIR$/JAVA基础篇/毫秒值得概念和使用_20201019/毫秒值得概念和作业_20201019.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/4_泛型/泛型.iml" filepath="$PROJECT_DIR$/JAVA中级篇/4_泛型/泛型.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/11_计算多种图形的面积和周长/计算多种图形的面积和周长.iml" filepath="$PROJECT_DIR$/JAVA中级篇/11_计算多种图形的面积和周长/计算多种图形的面积和周长.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/8_有理数计算/8_有理数计算.iml" filepath="$PROJECT_DIR$/JAVA提高篇/8_有理数计算/8_有理数计算.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算20201017.iml" filepath="$PROJECT_DIR$/JAVA基础篇/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算20201017.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算修改版20201017.iml" filepath="$PROJECT_DIR$/JAVA基础篇/金钱运算优化20201015/进行金钱运算20201017/进行金钱运算修改版20201017.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA基础篇/金钱运算优化20201015/金钱运算优化20201015.iml" filepath="$PROJECT_DIR$/JAVA基础篇/金钱运算优化20201015/金钱运算优化20201015.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JAVA中级篇/5_集合/集合.iml" filepath="$PROJECT_DIR$/JAVA中级篇/5_集合/集合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA提高篇/9_Collections集合工具类/Collections集合工具类.iml" filepath="$PROJECT_DIR$/JAVA提高篇/9_Collections集合工具类/Collections集合工具类.iml" />
     </modules>
   </component>
 </project>
