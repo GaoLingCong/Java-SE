@@ -1,9 +1,9 @@
-
-
-import java.awt.*;			//导包
-import java.awt.event.*;
-import java.util.Random;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Random;
+
 public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
 
     //定义面板
@@ -30,13 +30,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
     JButton jb2;
     JButton jb3;
     JButton jb1;
-
-    //定义菜单组件
-    JMenuBar jmb;//主菜单栏
-    JMenu jm1,jm2,jm3,jm4,jm5,jm6;;//菜单
-    JMenuItem jmi1,jmi2,jmi3,jmi4,jmi5,jmi6,jmi7,jmi8,jmi9;
-
-
 
     //定义显示区域
     JLabel jla1;
@@ -89,50 +82,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jspane2 = new JScrollPane(jta2);
         jspane3 = new JScrollPane(jta3);
 
-        //菜单栏属性设置
-        //主菜单栏
-        jmb = new JMenuBar();
-        jm1 = new JMenu("设置");
-        jm2 = new JMenu("属性");
-        jm3 = new JMenu("查看");
-        jm4 = new JMenu("游戏难度");
-        jm5 = new JMenu("单词颜色");
-        jm6 = new JMenu("单词大小");
-        jmi1 = new JMenuItem("英语单词");
-        jmi3 = new JMenuItem("英语句子");
-        jmi2 = new JMenuItem("汉字成语");
-        jmi4 = new JMenuItem("蓝色");
-        jmi5 = new JMenuItem("黄色");
-        jmi6 = new JMenuItem("绿色");
-        jmi7 = new JMenuItem("一号");
-        jmi8 = new JMenuItem("二号");
-        jmi9 = new JMenuItem("三号");
-        //主菜单添加组件
-        jmb.add(jm1);
-        jmb.add(jm2);
-        jmb.add(jm3);
-        //设置栏
-        jm1.add(jm4);
-        jm1.add(jm5);
-        jm1.add(jm6);
-        //游戏难度栏
-        jm4.addSeparator();
-        jm4.add(jmi1);
-        jm4.add(jmi2);
-        jm4.add(jmi3);
-        //单词颜色栏
-        jm5.addSeparator();
-        jm5.add(jmi4);
-        jm5.add(jmi5);
-        jm5.add(jmi6);
-        //单词大小栏
-         jm6.addSeparator();
-        jm6.add(jmi7);
-        jm6.add(jmi8);
-        jm6.add(jmi9);
-
-
-
         //设置字体样式
         jta3.setFont(font1);
         jta2.setFont(font2);
@@ -154,7 +103,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jla1.setFont(font);
 
         //初始化显示页面
-        ch = RandomWordsC();
+        ch = RandomWords();
         jla1.setText(ch);
         jta3.setText("欢迎加入单词游戏         游戏规则答对+5分答错-2分");
         jla1.setSize(sw, sh);
@@ -185,7 +134,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jp3.add(jsp1);
         jta1.add(jla1);
 
-
         //初始化得分数据
         Fen=0;
         z=0;
@@ -197,9 +145,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         this.add(jp1, BorderLayout.CENTER);
         this.add(jp2, BorderLayout.SOUTH);
         this.add(jp3, BorderLayout.WEST);
-
-        //设置菜单布局
-        this.add(jmb,BorderLayout.NORTH);
 
 
         //设置窗体属性
@@ -242,14 +187,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
             }
         });
 
-        //菜单栏监听
-        jmi1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-
         //备选空格事件处理
         /*jb2.addKeyListener(new KeyAdapter() {
             @Override
@@ -281,34 +218,14 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         });*/
     }
 
-    //随机产生英语单词
-    private String RandomWordsA() {
-        String[] s = {"good", "cheer", "strive", "jpg", "hello", "word", "tercher", "student",
-                "book", "genius", "blue", "beautiful", "health", "happy", "yellow", "computer",
-                "english", "reset", "eat", "me","green"};
+    //随机产生单词
+    private String RandomWords() {//产生随机单词
+        String[] s = {"good", "cheer", "strive", "optimistic", "hello", "word", "tercher", "student",
+                "book", "genius", "handsome", "beautiful", "health", "happy", "exercice", "computer",
+                "english", "jspanese", "eat", "me","reset","center","blue","green","yellow"};
         int b = ran.nextInt(21);//定义随机数区间[0,20]
         return s[b];
     }
-    //随机产生英语句子
-    private String RandomWordsB() {
-        String[] s = {"Heelo word","How much","what is the name","Where are you from","Where are you going","Active learning","Are you happy"};
-        int b = ran.nextInt(6);//定义随机数区间[0,6]
-        return s[b];
-    }
-    //随机产生汉字成语
-    private String RandomWordsC() {
-        String[] s = {"天道酬勤","厚德载物","居安思危","坚持不懈","海纳百川","上善若水"};
-        int b = ran.nextInt(5);//定义随机数区间[0,6]
-        return s[b];
-    }
-    //随机产生汉字句子
-    private String RandomWordsD() {
-        String[] s = {"志当存高远。","知者乐水，仁者乐山。","读书破万卷，下笔如有神。","一寸光阴一寸金","我命由我不由天","初九潜龙勿用"};
-        int b = ran.nextInt(5);//定义随机数区间[0,20]
-        return s[b];
-    }
-
-
 
     //获取用户屏幕大小
     private void SimpleFrame() {
@@ -338,7 +255,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jta3.setForeground(Color.blue);
 
         //产生单词
-        ch = RandomWordsC();
+        ch = RandomWords();
         jla1.setText(ch);
 
         //更改位置
@@ -380,7 +297,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         Fen=0;
 
         //初始化文本
-        ch=RandomWordsC();
+        ch=RandomWords();
         jla1.setText(ch);
         jta1.setText("重新开始，继续努力");
         jta2.setText("");
