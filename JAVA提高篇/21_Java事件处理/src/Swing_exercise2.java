@@ -43,9 +43,9 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
 
     //定义随机函数
     Random ran;
+    private String ch;//随机单词
     private int sw;  //屏幕宽度和高度
     private int sh;  //屏幕宽度和高度
-    private String ch;//随机单词
     private int  Fen;//记录分数
     private int  z;//记录正确题数
     private int  x;//记录错误题数
@@ -77,7 +77,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jta3 = new JTextArea();
 
         //创建单行文本框
-        jta2 = new TextField(10);
+        jta2 = new TextField(16);
 
         //设置多行文本框自动换行
         jta1.setLineWrap(true);
@@ -101,9 +101,9 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jmi1 = new JMenuItem("英语单词");
         jmi3 = new JMenuItem("英语句子");
         jmi2 = new JMenuItem("汉字成语");
-        jmi4 = new JMenuItem("蓝色");
-        jmi5 = new JMenuItem("黄色");
-        jmi6 = new JMenuItem("绿色");
+        jmi4 = new JMenuItem("黑色");
+        jmi5 = new JMenuItem("绿色");
+        jmi6 = new JMenuItem("粉色");
         jmi7 = new JMenuItem("一号");
         jmi8 = new JMenuItem("二号");
         jmi9 = new JMenuItem("三号");
@@ -154,7 +154,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         jla1.setFont(font);
 
         //初始化显示页面
-        ch = RandomWordsC();
+        ch = RandomWordsA();
         jla1.setText(ch);
         jta3.setText("欢迎加入单词游戏         游戏规则答对+5分答错-2分");
         jla1.setSize(sw, sh);
@@ -201,13 +201,14 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         //设置菜单布局
         this.add(jmb,BorderLayout.NORTH);
 
-
         //设置窗体属性
         this.setTitle("单词游戏");                                    //设置界面标题
         this.setExtendedState(MAXIMIZED_BOTH);                      //窗口最大化
         this.setLocation(1000, 200);                           //设置界面初始位置
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       //设置虚拟机和界面一同关闭
         this.setVisible(true);                                     //设置界面可视化
+
+        //事件监听处理
 
         //空格加鼠标确定事件监听
         jb2.addActionListener(new ActionListener() {
@@ -224,7 +225,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
                 }
             }
         });
-
         //退出按钮事件监听
         jb3.addActionListener(new ActionListener() {
             @Override
@@ -232,7 +232,6 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
                 System.exit(0);
             }
         });
-
         //重置按钮事件监听
         jb1.addActionListener(new ActionListener() {
             @Override
@@ -241,11 +240,54 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
                 Reset();
             }
         });
-
-        //菜单栏监听
-        jmi1.addActionListener(new ActionListener() {
+        //菜单栏黑色监听
+        jmi4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                jla1.setForeground(Color.black);
+
+            }
+        });
+        //菜单栏绿色监听
+        jmi5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jla1.setForeground(Color.green);
+
+            }
+        });
+        //菜单栏粉色监听
+        jmi6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jla1.setForeground(Color.magenta);
+
+            }
+        });
+        //一号字体大小监听
+        jmi7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Font font = new Font("Times new roman", Font.BOLD, 70);
+                jla1.setFont(font);
+
+            }
+        });
+        //二号字体大小监听
+        jmi8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Font font = new Font("Times new roman", Font.BOLD, 50);
+                jla1.setFont(font);
+
+            }
+        });
+        //三号字体大小监听
+        jmi9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Font font = new Font("Times new roman", Font.BOLD, 30);
+                jla1.setFont(font);
 
             }
         });
@@ -334,11 +376,11 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
 
 
         //改变颜色
-        jla1.setForeground(Color.green);
+       jla1.setForeground(Color.green);
         jta3.setForeground(Color.blue);
 
         //产生单词
-        ch = RandomWordsC();
+        ch = RandomWordsA();
         jla1.setText(ch);
 
         //更改位置
@@ -380,7 +422,7 @@ public class Swing_exercise2 extends JFrame {    //继承JFrame顶层框架
         Fen=0;
 
         //初始化文本
-        ch=RandomWordsC();
+        ch=RandomWordsA();
         jla1.setText(ch);
         jta1.setText("重新开始，继续努力");
         jta2.setText("");
