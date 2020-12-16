@@ -1,4 +1,4 @@
-package 字节输入流;
+package 一_字节输入流;
 
 import java.io.FileInputStream;
 import java.io.IOException;

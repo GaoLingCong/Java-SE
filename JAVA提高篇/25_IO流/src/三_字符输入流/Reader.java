@@ -1,4 +1,4 @@
-package 字符输入流;
+package 三_字符输入流;
 
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package 字符输出流;
+package 四_字符输出流;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -47,9 +47,6 @@ public class Writer {
         //fw.flush();
         //4.释放资源(会先把内存缓冲区中的数据刷新到文件中)
         fw.close();
-
-
-
 
     }
 }

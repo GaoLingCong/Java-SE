@@ -1,9 +1,7 @@
-package 字节输入流;
+package 一_字节输入流;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 /*
     字节输入流一次读取多个字节的方法:

@@ -1,4 +1,4 @@
-package 字节输出流;
+package 二_字节输出流;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

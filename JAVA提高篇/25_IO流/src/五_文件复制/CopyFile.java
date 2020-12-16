@@ -1,4 +1,4 @@
-package 文件复制;
+package 五_文件复制;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,8 +8,8 @@ import java.io.IOException;
     文件复制练习:一读一写
 
     明确:
-        数据源: c:\\1.jpg
-        数据的目的地: d:\\1.jpg
+        数据源: "G:\\网图\\a.png"
+        数据的目的地: "W:\\a.png"
 
     文件复制的步骤:
         1.创建一个字节输入流对象,构造方法中绑定要读取的数据源

@@ -1,4 +1,4 @@
-package 字符输出流;
+package 四_字符输出流;
 
 import java.io.FileWriter;
 import java.io.IOException;

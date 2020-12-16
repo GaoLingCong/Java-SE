@@ -1,4 +1,4 @@
-package 字节输出流;
+package 二_字节输出流;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -49,21 +49,6 @@ public class 字节输出流一次写入多个字节 {
         byte[] bytes2 = "你好，世界".getBytes();
         System.out.println(Arrays.toString(bytes2));//[-28, -67, -96, -27, -91, -67]
         fos.write(bytes2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         //释放资源
         fos.close();
