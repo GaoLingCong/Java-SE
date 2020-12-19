@@ -3,10 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.Instant;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.time.*;
 
 public class 定时代码 {
     public static void main(String[] args) {

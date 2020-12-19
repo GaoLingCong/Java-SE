@@ -1,9 +1,7 @@
 import javax.swing.*;
-import java.awt.*;import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.*;
 import java.util.Random;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Toolkit;
 
 public class Word_games extends JFrame {
