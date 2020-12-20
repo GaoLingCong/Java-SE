@@ -26,7 +26,10 @@ import java.util.Random;
         8.使用Socket对象中的方法getOutputStream,获取到网络字节输出流OutputStream对象
         9.使用网络字节输出流OutputStream对象中的方法write,给客户端回写"上传成功"
         10.释放资源(FileOutputStream,Socket,ServerSocket)
- */
+
+         输出就是发送的意思 用write发送getOutputStream()
+        输入就是接收的意思 用read来接收getInputStream()*/
+
 public class TCPServer {
     public static void main(String[] args) throws IOException {
         //1.创建一个服务器ServerSocket对象,和系统要指定的端口号

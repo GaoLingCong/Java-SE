@@ -27,6 +27,9 @@ import java.net.Socket;
         5.使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象
         6.使用网络字节输出流OutputStream对象中的方法write,给客户端回写数据
         7.释放资源(Socket,ServerSocket)
+
+        输出就是发送的意思 用write发送getOutputStream()
+        输入就是接收的意思 用read来接收getInputStream()
  */
 public class TCPServer {
     public static void main(String[] args) throws IOException {
@@ -36,7 +39,7 @@ public class TCPServer {
         Socket socket = server.accept();
         //3.使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象
         InputStream is = socket.getInputStream();
-        //4.使用网络字节输入流InputStream对象中的方法read,读取客户端发送的数据
+        //4.使用网络字节输入流InputStream对象中的方法read,读取客户端发送的数据    输入就是接收的意思
         byte[] bytes = new byte[1024];
         int len = is.read(bytes);
         System.out.println(new String(bytes,0,len));

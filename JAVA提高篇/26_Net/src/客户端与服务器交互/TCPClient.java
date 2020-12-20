@@ -41,10 +41,10 @@ public class TCPClient {
         Socket socket = new Socket("127.0.0.1",8888);
         //2.使用Socket对象中的方法getOutputStream()获取网络字节输出流OutputStream对象
         OutputStream os = socket.getOutputStream();
-        //3.使用网络字节输出流OutputStream对象中的方法write,给服务器发送数据
+        //3.使用网络字节输出流OutputStream对象中的方法write,给服务器发送数据    输出的意思就是发送的意思
         os.write("你好服务器".getBytes());
 
-        //4.使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象
+        //4.使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象    输入的意思就接收
         InputStream is = socket.getInputStream();
 
         //5.使用网络字节输入流InputStream对象中的方法read,读取服务器回写的数据
